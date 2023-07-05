@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercicio 5 - Camila</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="script5.js"></script>
+</head>
+<body>
+  <div class="modal modal-sheet d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2">Ex 5 - Pilha</h1>
+            </div>
+            <div class="modal-body p-5 pt-0">
+                <form>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control rounded-3" id="nome">
+                      <label for="nome">Digite um nome:</label>
+                    </div>
+                    <button class="w-50 mb-2 btn btn rounded-3 btn-primary" type="button" onclick="addPilha()">Adicionar</button>
+                    <button class="w-50 mb-2 btn btn rounded-3 btn-primary" type="button" onclick="remPilha()">Remover</button>
+                    <button class="w-50 mb-2 btn btn rounded-3 btn-primary" type="button" onclick="mostrarPilha()">Pilha</button>
+                </form>
+                <div id="pilha">
+                  <textarea class="form-control rounded-3" name="" id="pilha"></textarea>
+                  <label for="pilha"></label>
+                </div>  
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
