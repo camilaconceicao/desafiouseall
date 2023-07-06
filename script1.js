@@ -1,14 +1,19 @@
+import numeroPorExtenso from 'numero-por-extenso';
 
-function converterNumero() {
-  const numero = parseInt(document.getElementById('numero').value, 10);
+const numeroPorExtenso = require('numero-por-extenso');
+
+//const numeroExtenso = numeroPorExtenso.porExtenso(55);
+//console.log(numeroExtenso);  // Saída: "quarenta e dois"
+
+function converter() {
+  debugger
+  let numero = parseInt(document.getElementById('numero').value);
 
   if (isNaN(numero) || numero < 0 || numero > 9999) {
-    document.getElementById('resultado').value = 'Número inválido.';
+    document.getElementById('resultado').value = alert('Número inválido.');
     return;
   }
 
-  const porExtenso = porExtenso(numero);
+  let porExtenso = numeroPorExtenso.porExtenso(numero);
   document.getElementById('resultadoExtenso').value = porExtenso;
 }
-
-document.getElementById('converterBtn').addEventListener('click', converterNumero);

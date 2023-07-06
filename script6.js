@@ -19,16 +19,17 @@ class Fila {
 const exemplo = new Fila();
 
 function addFila() {
-    const nome = document.getElementById('nome').value;
+    let nome = document.getElementById('nome').value;
     exemplo.adicionar(nome);
-    exibirfila();
+    mostrarFila();
     document.getElementById('nome').value = '';
 }
 
 function remFila() {
-    const nome = document.getElementById('nome').value;
+    let nome = document.getElementById('nome').value;
     exemplo.remover(nome);
-    mostrarfila();
+    mostrarFila();
+    document.getElementById('nome').value = "";
 }
 
 function mostrarFila() {

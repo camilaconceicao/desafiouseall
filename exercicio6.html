@@ -21,13 +21,19 @@
                             <input type="text" class="form-control rounded-3" id="nome">
                             <label for="nome">Digite um nome:</label>
                         </div>
-                        <button class="w-100 mb-2 btn btn rounded-3 btn-primary" type="button"
-                            onclick="addFila()">Adicionar</button>
-                        <button class="w-100 mb-2 btn btn rounded-3 btn-primary" type="button"
-                            onclick="remFila()">Remover</button>
-                        <button class="w-100 mb-2 btn btn rounded-3 btn-primary" type="button"
-                            onclick="mostrarFila()">Fila</button>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="w-100 mb-2 btn btn rounded-3 btn-primary" type="button"
+                                onclick="addFila()">Adicionar</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="w-100 mb-2 btn btn rounded-3 btn-primary" type="button"
+                                onclick="remFila()">Remover</button>
+                            </div>
+                        </div>    
                     </form>
+                    <div id="fila">
+                    </div>  
                 </div>
             </div>
         </div>

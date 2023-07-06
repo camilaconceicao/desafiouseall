@@ -19,15 +19,17 @@ class Pilha {
 const exemplo = new Pilha();
 
 function addPilha() {
-    const nome = document.getElementById('nome').value;
+    let nome = document.getElementById('nome').value;
     exemplo.adicionar(nome);
-    exibirPilha();
+    mostrarPilha();
+    document.getElementById('nome').value = "";
 }
 
 function remPilha() {
-    const nome = document.getElementById('nome').value;
+    let nome = document.getElementById('nome').value;
     exemplo.remover(nome);
     mostrarPilha();
+    document.getElementById('nome').value = "";
 }
 
 function mostrarPilha() {

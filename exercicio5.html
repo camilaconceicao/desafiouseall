@@ -18,13 +18,16 @@
                       <input type="text" class="form-control rounded-3" id="nome">
                       <label for="nome">Digite um nome:</label>
                     </div>
-                    <button class="w-50 mb-2 btn btn rounded-3 btn-primary" type="button" onclick="addPilha()">Adicionar</button>
-                    <button class="w-50 mb-2 btn btn rounded-3 btn-primary" type="button" onclick="remPilha()">Remover</button>
-                    <button class="w-50 mb-2 btn btn rounded-3 btn-primary" type="button" onclick="mostrarPilha()">Pilha</button>
-                </form>
+                    <div class="row">
+                      <div class="col-6">
+                        <button class="w-100 mb-2 btn btn rounded-3 btn-primary" type="button" onclick="addPilha()">Adicionar</button>
+                      </div>
+                      <div class="col-6">
+                        <button class="w-100 mb-2 btn btn rounded-3 btn-primary" type="button" onclick="remPilha()">Remover</button>
+                      </div>
+                    </div>
+                  </form>
                 <div id="pilha">
-                  <textarea class="form-control rounded-3" name="" id="pilha"></textarea>
-                  <label for="pilha"></label>
                 </div>  
             </div>
         </div>
